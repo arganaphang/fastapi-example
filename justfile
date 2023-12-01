@@ -1,3 +1,9 @@
+env-create:
+  python3 -m venv venv
+env-activate:
+  source ./venv/bin/activate.fish
+env-deactivate:
+  deactivate
 run-dev:
   uvicorn main:app --reload
 deps-out:
